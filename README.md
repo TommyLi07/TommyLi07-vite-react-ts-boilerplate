@@ -1,50 +1,27 @@
-# React + TypeScript + Vite
+# Vite React Typescript Boilerplate
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+An efficient and modern web development scaffold powered by Vite, React, and TypeScript, with integrated tools like Prettier, TypeScript ESLint, Husky, Commitizen, and cz-customizable for maintaining code quality, enforcing standards, and facilitating streamlined collaboration.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## Expanding the ESLint configuration
+- [Vite](https://vitejs.dev/) - Fast frontend build tool
+- [React](https://reactjs.org/) - JavaScript library for building user interfaces
+- [TypeScript](https://www.typescriptlang.org/) - Superset of JavaScript with static types
+- [TypeScript ESLint](https://github.com/typescript-eslint/typescript-eslint) - TypeScript support for ESLint
+- [Husky](https://typicode.github.io/husky/#/) - Git hooks made easy
+- [Commitizen](https://commitizen-tools.github.io/commitizen/) - Conventional commit messages
+- [cz-customizable](https://github.com/leonardoanalista/cz-customizable) - Customizable Commitizen adapter
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Getting Started
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname
-    }
-  }
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules
-  }
-})
+```bash
+git clone https://github.com/TommyLi07/vite-react-ts-boilerplate.git
+cd vite-react-ts-boilerplate.git
+# install Dependencies
+npm/pnpm install
+# start the Development Server
+npm/pnpm run dev
+# Visit http://localhost:3000 to view the application.
 ```
