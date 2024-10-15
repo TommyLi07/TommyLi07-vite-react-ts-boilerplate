@@ -1,0 +1,12 @@
+root = true # Fields that control whether the configuration file .editorconfig takes effect
+
+[**] # Match all files
+indent_style = space # Indentation style, optional space｜tab
+indent_size = 2 # Number of spaces to indent
+charset = utf-8 # Set character set
+trim_trailing_whitespace = true # Remove leading and trailing spaces in a line
+insert_final_newline = true # Set to true to cause the file to end with a blank line
+end_of_line = lf
+
+[**.md] # Match markdown file
+trim_trailing_whitespace = false
