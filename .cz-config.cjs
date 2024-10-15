@@ -5,10 +5,16 @@ module.exports = {
     { value: 'fix', name: 'fix: bugfix' },
     { value: 'docs', name: 'docs: documentation changes' },
     { value: 'style', name: 'style: code format' },
-    { value: 'refactor', name: 'refactor: a code change that neither fixes a bug nor adds a feature' },
+    {
+      value: 'refactor',
+      name: 'refactor: a code change that neither fixes a bug nor adds a feature'
+    },
     { value: 'perf', name: 'perf: performance optimization' },
     { value: 'test', name: 'test: adding missing tests' },
-    { value: 'chore', name: 'chore: changes to the build process or auxiliary tools and libraries such as documentation generation' },
+    {
+      value: 'chore',
+      name: 'chore: changes to the build process or auxiliary tools and libraries such as documentation generation'
+    },
     { value: 'revert', name: 'revert: revert to a commit' },
     { value: 'build', name: 'build: build a bundle' }
   ],
@@ -25,4 +31,3 @@ module.exports = {
   // The maximum length of the subject description is 72 characters.
   subjectLimit: 72
 }
-
